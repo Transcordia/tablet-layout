@@ -1,5 +1,9 @@
 # Tablet Layout using AngularJS
 
+> ### Note
+> This is tagged as version 0.1.0. While it functions fine albeit without animations, I
+    feel it litters its business logic a bit too much.
+
 Experiments using a full screen layout with some mechanisms to manipulate the
 header and footer size. The idea is that the header and footer need not be full size
 while the user is interacting with the main content area, so they should gracefully
