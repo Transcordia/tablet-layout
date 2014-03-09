@@ -1,0 +1,22 @@
+{
+  "name": "tablet-layout",
+  "version": "0.1.0",
+  "authors": [
+    "jcook <jcook@transcordia.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "twbs/bootstrap#~3.1.1",
+    "angular": "~1.2.14",
+    "angular-animate": "~1.2.14",
+    "angular-touch": "~1.2.14"
+  }
+}
