@@ -59,3 +59,8 @@ footer {
     right: 0;
     width: 100%;
 }
+
+body.layoutmax main {
+    top: 45px;
+    bottom: 0;
+}

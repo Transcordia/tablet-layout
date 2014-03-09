@@ -10,7 +10,7 @@
     <link href="lib/app-layout/app-layout.css" rel="stylesheet">
 </head>
 
-<body ng-controller="LayoutController">
+<body ng-class="{layoutmax: !layout.max}" ng-controller="LayoutController">
 
 <header>
     <section class="title" ng-show="layout.max">
