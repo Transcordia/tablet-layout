@@ -1,14 +1,20 @@
 # Tablet Layout using AngularJS
 
-> ### Note
-> This is tagged as version 0.3.0. While it functions fine albeit without animations, I
-    feel it litters its business logic a bit too much.
-
 Experiments using a full screen layout with some mechanisms to manipulate the
 header and footer size. The idea is that the header and footer need not be full size
 while the user is interacting with the main content area, so they should gracefully
 get out of the way. When the user needs to navigate or select a tool, they are only a
 click or swipe away.
+
+> ### Note
+> This project has an incremental journey that may be worthwhile to experience.
+> * The [second milestone]() adds
+    animation capability to the release.
+> * The [first milestone](https://github.com/Transcordia/tablet-layout/tree/v0.3.0) is
+    representative of a brute force approach with no animations. The `ng-show` directive
+    is used along with a controller scope variable to toggle visibility of particular
+    block elements when it is set. The `<main>` content is re-anchored based on a class
+    that is managed on the body using an `ng-class` directive.
 
 ## Element Positioning
 
@@ -26,9 +32,8 @@ solely using CSS.
 
 ## Animation
 
-In this tagged version, there is no animation enabled. Sections of content simply are set
-to hide/show based on the value of the scope's `layout.max` value which is a boolean
-`true` or `false`.
+Unfortunately, this experiment needs to support IE9, so I cannot use CSS3 transitioning.
+
 
 
 
