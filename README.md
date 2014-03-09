@@ -1,7 +1,7 @@
 # Tablet Layout using AngularJS
 
 > ### Note
-> This is tagged as version 0.1.0. While it functions fine albeit without animations, I
+> This is tagged as version 0.3.0. While it functions fine albeit without animations, I
     feel it litters its business logic a bit too much.
 
 Experiments using a full screen layout with some mechanisms to manipulate the
