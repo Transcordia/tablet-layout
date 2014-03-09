@@ -1,0 +1,6 @@
+.idea
+*.iml
+target
+**/.bower.json
+src/**/bower.json
+**/.DS_Store

@@ -1,0 +1,61 @@
+body {
+    background-color: #dfd;
+}
+
+section.title {
+    background-color: #fdf;
+    height: 50px;
+}
+
+section.tools {
+    background: #fdd;
+    height: 45px;
+}
+
+nav {
+    background-color: #ddf;
+    height: 30px;
+}
+
+section.subnav {
+    background-color: #fdf;
+    height: 40px;
+}
+
+footer {
+    background-color: #ffd;
+    height: 75px;
+}
+
+.tools button {
+    margin: 6px 15px 0 0;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 0;
+    opacity: 0.3;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+main {
+    left: 0;
+    overflow-y: auto;
+    position: absolute;
+    right: 0;
+    top: 165px;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
