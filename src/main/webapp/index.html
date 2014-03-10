@@ -10,10 +10,10 @@
     <link href="lib/app-layout/app-layout.css" rel="stylesheet">
 </head>
 
-<body ng-class="{layoutmax: !layout.max}" ng-controller="LayoutController">
+<body ng-controller="LayoutController" ng-class="{maxbody: layout.max}">
 
 <header>
-    <section class="title" ng-show="layout.max">
+    <section ng-hide="layout.max" class="title sectionLayout">
         <h2>Title Section</h2>
     </section>
     <section class="tools">
@@ -24,29 +24,28 @@
             </button>
         </div>
     </section>
-    <nav ng-show="layout.max">
+    <nav ng-hide="layout.max" class="sectionLayout">
         <h2>Navigation Section</h2>
     </nav>
-    <section class="subnav" ng-show="layout.max">
+    <section ng-hide="layout.max" class="subnav sectionLayout">
         <h2>Sub-Navigation</h2>
     </section>
 </header>
 
-<main ng-click="layout.max = false">
-    <h1>Tablet Layout Example</h1>
+<main>
+    <h1>Main</h1>
 
     <p>
         This example exposes a header and footer that can maximize and minimize its
         presentation qualities with simple interactions or gestures.
     </p>
 
-    <p ng-show="">
-
-    </p>
 </main>
 
-<footer ng-show="layout.max">
-    <h2>Footer Section</h2>
+<footer>
+    <section ng-hide="layout.max" class="footer sectionLayout">
+        <h2>Footer Section</h2>
+    </section>
 </footer>
 
 <script src="lib/jquery/dist/jquery.min.js"></script>
