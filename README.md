@@ -8,7 +8,7 @@ click or swipe away.
 
 > ### Note
 > This project has an incremental journey that may be worthwhile to experience.
-> * The [second milestone]() adds
+> * The [second milestone](https://github.com/Transcordia/tablet-layout/tree/v0.3.0) adds
     animation capability to the release.
 > * The [first milestone](https://github.com/Transcordia/tablet-layout/tree/v0.3.0) is
     representative of a brute force approach with no animations. The `ng-show` directive

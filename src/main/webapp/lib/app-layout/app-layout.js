@@ -16,12 +16,16 @@
 
     ] );
 
-    mod.animation( '.tabletLayout', function () {
+    mod.animation( '.sectionLayout', function () {
+        function saveHeight( ele ) {
+            if ( (ele).data( 'height' ) > 0 ) return;
+            $( ele ).data( 'height', $( ele ).height() );
+        }
 
         return {
             addClass : function ( ele, clsName, done ) {
                 if ( clsName === 'ng-hide' ) {
-                    $( ele ).data( 'height', $( ele ).height() );
+                    saveHeight( ele );
                     $( ele )
                         .removeClass( 'ng-hide' )
                         .animate( {
@@ -48,6 +52,42 @@
             }
         }
     } );
+
+    mod.animation( '.maxbody', ['$log', function ( $log ) {
+        function resize( now, tween ) {
+            $( 'main' ).css( {
+                top : $( 'header' ).height(),
+                bottom : $( 'footer' ).height()
+            } )
+        }
+
+        return {
+            addClass : function ( ele, clsName, done ) {
+                $log.info( 'addClass', clsName );
+                if ( clsName === 'maxbody' ) {
+                    $( 'main' )
+                        .animate( { opacity: 1 }, {
+                            step : resize,
+                            duration : 275,
+                            complete : done } );
+                } else {
+                    done();
+                }
+            },
+            removeClass : function ( ele, clsName, done ) {
+                $log.info( 'removeClass', clsName );
+                if ( clsName === 'maxbody' ) {
+                    $( 'main' )
+                        .animate( { opacity: 1 }, {
+                            step : resize,
+                            duration : 275,
+                            complete : done } );
+                } else {
+                    done();
+                }
+            }
+        }
+    } ] );
 
 })( angular );
 

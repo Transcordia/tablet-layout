@@ -10,10 +10,10 @@
     <link href="lib/app-layout/app-layout.css" rel="stylesheet">
 </head>
 
-<body ng-class="{layoutmax: layout.max}" ng-controller="LayoutController">
+<body ng-controller="LayoutController" ng-class="{maxbody: layout.max}">
 
 <header>
-    <section ng-hide="layout.max" class="title tabletLayout">
+    <section ng-hide="layout.max" class="title sectionLayout">
         <h2>Title Section</h2>
     </section>
     <section class="tools">
@@ -24,15 +24,15 @@
             </button>
         </div>
     </section>
-    <nav ng-hide="layout.max" class="tabletLayout">
+    <nav ng-hide="layout.max" class="sectionLayout">
         <h2>Navigation Section</h2>
     </nav>
-    <section ng-hide="layout.max" class="subnav tabletLayout">
+    <section ng-hide="layout.max" class="subnav sectionLayout">
         <h2>Sub-Navigation</h2>
     </section>
 </header>
 
-<main ng-click="layout.max = false">
+<main>
     <h1>Main</h1>
 
     <p>
@@ -43,7 +43,7 @@
 </main>
 
 <footer>
-    <section ng-hide="layout.max" class="footer tabletLayout">
+    <section ng-hide="layout.max" class="footer sectionLayout">
         <h2>Footer Section</h2>
     </section>
 </footer>
